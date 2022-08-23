@@ -1,2 +1,3 @@
 # Algo-Master-Sheet
-The Sheet contains a list of well curated questions which would help in brushing up your algo skills.
+
+[LINK TO THE OFFICIAL SHEET](https://docs.google.com/spreadsheets/d/11mi-sknqLyc7C9b2KANml-LCC9F59GAP_ScHgakR_Uo/edit#gid=0)
