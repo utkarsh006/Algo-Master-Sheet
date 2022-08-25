@@ -1,39 +1,52 @@
+/* arr = [1,2,3,4,5], k = 4, x = -1
+
+ STEP 1:   1 2 3 4 5 
+           Subtract the value of k from these values, But the answer would be absolute
+           2 3 4 5 6
+           
+ STEP 2: Push the pair (difference, element) into maxheap.
+ 
+          6,5
+          5,4
+          4,3
+          3,2
+          2,1
+          
+          If maxheap size > k then pop out the element from maxheap.
+          5,4
+          4,3
+          3,2
+          2,1
+          
+   STEP 3: Till my heap is not empty push the second value of pair into ans vector and sort it.   */
+
+
+
+
 class Solution {
 public:
-    // arr = [1,2,3,4,5], k=4, x=3
-    vector<int> findClosestElements(vector<int>& arr, int k, int x)
+   
+    vector<int> findClosestElements(vector<int>& arr, int k, int x) 
     {
-        vector<int> ans;
+        priority_queue< pair<int,int>> maxh;
         
-        priority_queue < pair<int,int>> pq;
-        
-        // 3-1=2, 3-2=1, 3-3=0, 3-4=1, 3-5=2 => 2 1 0 1 2  
-        // (2,1) (1,2) (0,3) (1,4) (2,5)  This is my pq
-        // size of pq = 5 which is greater than 4. So, pop one element
-        // pq status : (2,1) (1,2) (0,3) (1,4)
-        
-        for(auto it: arr)
-        {
-            pq.push( make_pair( abs(x-it), it ) );
-              if(pq.size()>k)
-                  pq.pop();
-        }
-        
-          // (2,1) (1,2) (0,3) (1,4) This is my pq
-
-        
-          // ans = [1]        pq = (1,2) (0,3) (1,4)
-         //  ans = [1,2]      pq = (0,3) (1,4)
-         //  ans = [1,2,3]    pq = (1,4)
-        //   ans = [1,2,3,4]  pq = EMPTY
-          
-          while(!pq.empty())
+          for(auto it: arr)
           {
-              ans.push_back(pq.top().second);
-              pq.pop();
+              maxh.push( make_pair( abs(it-x), it ) );
+              if(maxh.size() >k)
+                  maxh.pop();
           }
         
-        sort(ans.begin(), ans.end());
+           vector<int> ans;
+           
+        while(!maxh.empty())
+        {
+            ans.push_back(maxh.top().second);
+            maxh.pop();
+        }
+        
+        sort(ans.begin(),ans.end());
+        
         return ans;
     }
 };
