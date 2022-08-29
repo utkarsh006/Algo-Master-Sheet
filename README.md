@@ -1,6 +1,9 @@
 # Algo-Master-Sheet
 
+<div align="center"> <b> STAR ⭐ THIS REPO IF YOU LIKED THE WORK </b> </div> <br>
+
 😊 If you've got your basics nicely covered, then only proceed with the sheet. <br><br>
+
 - [LINK TO THE OFFICIAL SHEET](https://docs.google.com/spreadsheets/d/11mi-sknqLyc7C9b2KANml-LCC9F59GAP_ScHgakR_Uo/edit#gid=0)
 - [FIND THE EXPLANATIONS HERE](https://www.youtube.com/playlist?list=PLJHIvga3HLZyT7_HWKVLWbJwejIzXKIfR)
 
@@ -41,3 +44,4 @@
 - INTERACTIVE PROBLEMS
 - RANDOMIZATION
 - POLICY BASED DATA STRUCTURES
+
