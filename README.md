@@ -9,7 +9,7 @@
 
 # CONTENTS
 - [STL](https://github.com/utkarsh006/Algo-Master-Sheet/tree/main/STL)
-- HASHING
+- [Hashing](https://github.com/utkarsh006/Algo-Master-Sheet/tree/main/Hashing)
 - BIT MANIPULATION
 - LARGE NUMBERS
 - RECURRENCE
