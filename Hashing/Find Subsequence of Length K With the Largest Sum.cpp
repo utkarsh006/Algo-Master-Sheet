@@ -1,3 +1,6 @@
+// TIME COMPLEXITY : O(n logk)
+// SPACE COMPLEXITY : O(n)
+
 class Solution {
 public:
     vector<int> maxSubsequence(vector<int>& nums, int k) 
