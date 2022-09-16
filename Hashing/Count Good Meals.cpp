@@ -2,8 +2,8 @@
 Step 1. Create an Unordered Map
 Step 2. Initialise the ans=0
 Step 3. Loop through Each Element in the vector
-Step 4. For Each Element loot through pow(2,1) to pow(2,22) 
-Step 5. Find For the element pow(2,i) - x  in the map . If found then make add the frequency.
+Step 4. For Each Element loop through pow(2,1) to pow(2,22) 
+Step 5. Find For the element pow(2,i) - x  in the map . If found then add the frequency.
 Step 6. Every time add the element of the vector into the map
 Step7 . Return the ans with modulo    */
 
